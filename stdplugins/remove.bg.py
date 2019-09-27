@@ -72,7 +72,7 @@ async def _(event):
             )
         end = datetime.now()
         ms = (end - start).seconds
-        await event.edit("Background Removed in {} seconds)
+        await event.edit("Background Removed in {} seconds".format(ms))
     else:
         await event.edit("ReMove.BG API returned Errors. Please report to @UniBorg\n`{}".format(output_file_name.content.decode("UTF-8")))
 
